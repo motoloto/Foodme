@@ -1,0 +1,14 @@
+<!-- 計算分數 -->
+<%
+	double av_scor_pri = restVO.getScor_pri() / restVO.getScor_pritms();
+	double av_scor_hea = restVO.getScor_hea() / restVO.getScor_heatms();
+	double av_scor_cook = restVO.getScor_cook()
+			/ restVO.getScor_cooktms();
+	double av_scor_envisco = restVO.getScor_envisco()
+			/ restVO.getScor_envtms();
+	double av_scor_serv = restVO.getScor_serv()
+			/ restVO.getScor_servtms();
+	double avg = (av_scor_pri + av_scor_hea + av_scor_cook
+			+ av_scor_envisco + av_scor_serv) / 5;
+	pageContext.setAttribute("avg", avg);
+%>

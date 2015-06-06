@@ -1,0 +1,124 @@
+.btn {
+	font-family: Arial;
+	color: #ffffff;
+	font-size: 20px;
+	background: #f05118;
+	text-decoration: none;
+	width: 150px;
+}
+
+.btn:hover {
+	-webkit-box-shadow: 0px 0px 15px #eb8b15;
+	-moz-box-shadow: 0px 0px 15px #eb8b15;
+	box-shadow: 0px 0px 15px #eb8b15;
+	background: #fa8e3c;
+	text-decoration: none;
+	width: 150px;
+}
+
+#title {
+	width: 1140px;
+	height: 100px;
+	vertical-align: middle;
+	text-align: center;
+	line-height: 100px; /*方法五*/
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 36px;
+}
+
+#img {
+	text-align: right;
+	opacity: 0.5;
+}
+
+#img1 {
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+}
+
+th {
+	padding: 0.5cm;
+	text-align: center;
+}
+
+td {
+	padding: 0.5cm;
+	text-align: center;
+}
+
+#tabs-1 {
+	background-color: #FCF;
+}
+
+#tabs-2 {
+	background-color: #FC9;
+}
+
+#tabs-3 {
+	background-color: #CFF;
+}
+
+#tabs-4 {
+	background-color: #CFC;
+}
+
+#tabs-5 {
+	background-color: #ECD1ED;
+}
+
+#tabs-6 {
+	background-color: #C6FF8C;
+}
+
+#tabs-7 {
+	background-color: #F88787;
+}
+
+.rest {
+	font-size: 20px;
+}
+
+.btn {
+	font-family: Arial;
+	color: #ffffff;
+	font-size: 20px;
+	background: #f05118;
+	text-decoration: none;
+	width: 200px;
+}
+
+.btn:hover {
+	-webkit-box-shadow: 0px 0px 15px #eb8b15;
+	-moz-box-shadow: 0px 0px 15px #eb8b15;
+	box-shadow: 0px 0px 15px #eb8b15;
+	background: #fa8e3c;
+	text-decoration: none;
+	width: 200px;
+}
+
+#title {
+	width: 1140px;
+	height: 100px;
+	vertical-align: middle;
+	text-align: center;
+	line-height: 100px; /*方法五*/
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 36px;
+}
+
+#img {
+	text-align: right;
+	opacity: 0.5;
+}
+
+#img1 {
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+}
+
+font {
+	color: red;
+	font-size: 20px;
+}

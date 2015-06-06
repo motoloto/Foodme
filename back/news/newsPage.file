@@ -1,0 +1,80 @@
+<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<div class="col-md-12 column">
+						<div align="center">							
+						<!-- ------------分頁標籤  一頁顯示3筆資料-->  
+							<div role="tabpanel">
+								<ul class="nav nav-tabs" role="tablist">
+										<%	int pageIndex = 1;	%>
+									<c:forEach var="newsVO" items="${list}" varStatus="status">
+										<c:if test="${status.index%3==0}">
+											<li role="presentation"	class="${pageIndex==1? 'active':''}">
+												<a href="#a${status.index}" aria-controls="a${status.index}"		role="tab" data-toggle="tab">
+													第<%=pageIndex%>頁
+													</a> 
+												<%pageIndex++;%>
+											</li>
+										</c:if>
+									</c:forEach>
+								</ul>
+							</div>
+							<!-- 分頁內容---一頁顯示3筆資料----------- -->
+								<div class="tab-content">
+									<c:forEach var="newsVO" items="${list}" varStatus="status">
+									<!-- 每三筆資料做成一個TABLE-- -->
+										<c:if test="${status.index%3==0}">	
+											<div role="tabpanel" 	class="tab-pane ${status.index==0?'active':''}" 	id="a${status.index}" > 
+											 <table class="table table-bordered"><tbody>
+										</c:if>
+										
+											<tr  ${newsVO.news_no==param.news_no? 'class=\'danger\'':''}>  <!-- 修改過的內容變色-- -->
+											<td>
+												<div class="panel-group" id="accordion" role="tablist"
+													aria-multiselectable="true">
+													<div class="panel panel-default">
+														<a data-toggle="collapse" data-parent="#accordion"
+															href="#${newsVO.news_no}" aria-expanded="false"
+															aria-controls="collapseOne">
+															<div class="panel-heading" role="tab" id="headingOne">
+																<table>
+																	<tr >
+																		<td width="75%"><h4 class="panel-title">${newsVO.news_no },<b>${newsVO.news_title }</b></h4></td>
+																		<td width="10%" align="right"><h4 class="panel-title">【${newsVO.news_time }】</h4></td>
+																	</tr>
+																</table>
+															</div>
+														</a>
+														<div id="${newsVO.news_no}"
+															class="panel-collapse collapse" role="tabpanel"
+															aria-labelledby="headingTwo">
+															<div class="panel-body">${newsVO.news_cont}</div>
+														</div>
+													</div>
+												</div>
+											</td>
+											<td width="5%">
+												<FORM METHOD="post"
+													ACTION="<%=request.getContextPath()%>/news/news.do">
+													<input class="btn btn-lg btn-warning" type="submit"
+														value="修改"> <input type="hidden" name="news_no"
+														value="${newsVO.news_no}"> <input type="hidden"
+														name="action" value="getOne_For_Update">
+												</FORM>
+											</td>
+											<td width="5%">
+												<FORM METHOD="post"
+													ACTION="<%=request.getContextPath()%>/news/news.do">
+													<input class="btn btn-lg  btn-danger" type="submit"
+														value="刪除"> <input type="hidden" name="news_no"
+														value="${newsVO.news_no}"> <input type="hidden"
+														name="action" value="delete">
+												</FORM>
+										</tr>
+											
+										<c:if test="${status.count%3==0}">
+										<!-- 每三筆資料做成一個TABLE 此為TABLE的結尾-- -->
+											</tbody>	</table></div>
+										</c:if>
+										<%pageIndex++;%>
+										
+									</c:forEach></div>
+								</div>

@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Bootstrap 3, from LayoutIt!</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+	<!--link rel="stylesheet/less" href="less/bootstrap.less" type="text/css" /-->
+	<!--link rel="stylesheet/less" href="less/responsive.less" type="text/css" /-->
+	<!--script src="js/less-1.3.3.min.js"></script-->
+	<!--append ‘#!watch’ to the browser URL, then refresh the page. -->
+	
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+
+  <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+  <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+  <![endif]-->
+
+  <!-- Fav and touch icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/apple-touch-icon-144-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/apple-touch-icon-114-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/apple-touch-icon-72-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" href="img/apple-touch-icon-57-precomposed.png">
+  <link rel="shortcut icon" href="img/favicon.png">
+  
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/scripts.js"></script>
+</head>
+
+<body>
+<div class="container">
+	<div class="row clearfix page_container">
+ <!--  HEADER的開始-->
+		<div class="col-md-12 column">
+			<div class="row clearfix  hearder" id="hearder_bar">
+				<div class="col-md-12 column" id="hearder_bar">
+					<div class="row clearfix">
+						<div class="col-md-3 column">
+							<a href="index.html"><img width="250" height="150" alt="140x140" src="img/LOGO.png" class="img-circle" id="logo"></a>
+						</div>
+						<div class="col-md-6 column">
+							<div class="page-title">
+								<h1>
+									線上餐廳訂位系統 <span></span>
+								</h1>
+							</div>
+						</div>
+						<div class="col-md-3 column">
+							<form class="form-horizontal" role="form">
+								<div class="form-group">
+									
+									<div class="col-sm-10 ">
+										<input type="text" class="form-search" id="searchInput" placeholder="搜尋餐廳的名稱">
+                                        <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
+									</div>
+								</div>
+								<div class="form-group">
+
+								</div>
+							</form>
+						</div>
+					</div>
+					<div class="row clearfix" id="navbar">
+                    
+						<div class="col-md-2 column headerbutton">
+							 <a href="#" class="btn btn-danger btn-block" type="button">關於</a>
+						</div>
+                        <div class="col-md-2 column headerbutton">
+							 <a href="#" class="btn btn-danger btn-block" type="button">餐廳訂位</a>
+						</div>
+                        <div class="col-md-2 column headerbutton">
+							 <a href="#" class="btn btn-danger btn-block" type="button">會員專區</a>
+						</div>
+                        <div class="col-md-2 column headerbutton">
+							 <a href="#" class="btn btn-danger btn-block" type="button">加盟申請</a>
+						</div>
+                        <div class="col-md-2 column headerbutton">
+							 <a href="#" class="btn btn-danger btn-block" type="button">常見問題</a>
+						</div>
+                        <div class="col-md-2 column headerbutton">
+							 <a href="#" class="btn btn-danger btn-block" type="button">意見回饋</a>
+						</div>
+					</div>
+					
+			  </div>
+			</div>
+            			
+			<div class="row clearfix">
+				<div class="col-md-12 column">
+					<ul class="breadcrumb">
+						<li>
+							<a href="#">Home</a> <span class="divider">/</span>
+						</li>
+						<li>
+							<a href="#">Library</a> <span class="divider">/</span>
+						</li>
+						<li class="active">
+									Data
+						</li>
+						</ul>
+						</div>
+				</div>
+<!-- HEADER 的結束-->   
+			<ul class="nav nav-tabs">
+                  <li role="presentation" class="active"><a href="fe_searchRs.html">分類推薦</a></li>
+                  <li role="presentation"><a href="fe_random.html">隨機推薦</a></li>
+                  <li role="presentation"><a href="fe_LocRecom.html">位置推薦</a></li>
+            </ul> 
+			<div class="row clearfix">
+				<div class="col-md-12 column">
+			<div class="carousel slide" id="carousel-699690">
+				<ol class="carousel-indicators">
+					<li class="active" data-slide-to="0" data-target="#carousel-699690">
+					</li>
+					<li data-slide-to="1" data-target="#carousel-699690">
+					</li>
+					<li data-slide-to="2" data-target="#carousel-699690">
+					</li>
+				</ol>
+				<div class="carousel-inner">
+					<div class="item active">
+						<img alt="" src="img/R1.jpg" />
+						<div class="carousel-caption">
+							<h4>
+								First Thumbnail label
+							</h4>
+							<p>
+								Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
+							</p>
+						</div>
+					</div>
+					<div class="item">
+						<img alt="" src="img/R2.jpg" />
+						<div class="carousel-caption">
+							<h4>
+								Second Thumbnail label
+							</h4>
+							<p>
+								Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
+							</p>
+						</div>
+					</div>
+					<div class="item">
+						<img alt="" src="img/R3.jpg" />
+						<div class="carousel-caption">
+							<h4>
+								Third Thumbnail label
+							</h4>
+							<p>
+								Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
+							</p>
+						</div>
+					</div>
+				</div> <a class="left carousel-control" href="#carousel-699690" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a> <a class="right carousel-control" href="#carousel-699690" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+			</div>
+		</div>
+	</div>
+</div>
+
+	<div class="row clearfix allbtn" >
+		<div class="col-md-3 column dropdown" >
+			<div class="btn-group">
+				 <button class="btn btn-default">選擇料理</button> <button data-toggle="dropdown" class="btn btn-default dropdown-toggle"><span class="caret"></span></button>
+				<ul class="dropdown-menu">
+					<li>
+						<a href="#">美式料理</a>
+					</li>
+					<li>
+						<a href="#">義式料理</a>
+					</li>
+					<li>
+						<a href="#">法式料理</a>
+					</li>
+					<li>
+						<a href="#">台菜料理</a>
+					</li>
+					<li>
+						<a href="#">德式料理</a>
+					</li>
+					<li>
+						<a href="#">印度料理</a>
+					</li>
+					<li>
+						<a href="#">韓式料理</a>
+					</li>
+					<li>
+						<a href="#">日式料理</a>
+					</li>
+					<li>
+						<a href="#">泰式料理</a>
+					</li>
+					<li>
+						<a href="#">港式料理</a>
+					</li>
+					<li class="divider">
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="col-md-4 column dropdown">
+			<div class="btn-group">
+				 <button class="btn btn-default">用餐日期</button> <button data-toggle="dropdown" class="btn btn-default dropdown-toggle"><span class="caret"></span></button>
+				<ul class="dropdown-menu">
+					<li>
+						<a href="#">跳出小日曆</a>
+					</li>
+					<li class="disabled">
+						<a href="#">桃園市</a>
+					</li>
+					<li class="divider">
+					</li>
+					<li>
+						<a href="#">Something else here</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="col-md-3 column dropdown">
+			<div class="btn-group">
+				 <button class="btn btn-default">用餐人數</button> <button data-toggle="dropdown" class="btn btn-default dropdown-toggle"><span class="caret"></span></button>
+				<ul class="dropdown-menu">
+					<li>
+						<a href="#">2人</a>
+					</li>
+					<li class="disabled">
+						<a href="#">3人</a>
+					</li>
+					<li class="divider">
+					</li>
+					<li>
+						<a href="#">Something else here</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="col-md-2 column dropdown">
+			<div class="btn-group">
+				 <button class="btn btn-default">找餐廳</button> 
+</span></button>
+			</div>
+		</div>
+	</div>
+	<div class="row clearfix">
+		<div class="col-md-12 column">
+			<div class="row">
+				<div class="col-md-4">
+					<div class="thumbnail">
+						<img alt="300x200" src="img/res1.jpg">
+						<div class="caption">
+							<h3>
+								Thumbnail label
+							</h3>
+							<p>
+								Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
+							</p>
+							<p>
+								<a class="btn btn-primary" href="#">Action</a> <a class="btn" href="#">Action</a>
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="thumbnail">
+						<img alt="300x200" src="img/res2.jpg">
+						<div class="caption">
+							<h3>
+								Thumbnail label
+							</h3>
+							<p>
+								Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
+							</p>
+							<p>
+								<a class="btn btn-primary" href="#">Action</a> <a class="btn" href="#">Action</a>
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="thumbnail">
+						<img alt="300x200" src="img/res3.jpg">
+						<div class="caption">
+							<h3>
+								Thumbnail label
+							</h3>
+							<p>
+								Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
+							</p>
+							<p>
+								<a class="btn btn-primary" href="#">Action</a> <a class="btn" href="#">Action</a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+			<div class="row clearfix">
+				<div class="col-md-12 column">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>
